@@ -1,0 +1,16 @@
+# Editar o crontab do root
+sudo crontab -e
+
+# Adicionar esta linha:
+0 2 * * 0 /opt/scripts/clean_logs.sh >> /var/log/cron_cleanup.log 2>&1
+
+┌───────────── minuto (0 - 59)
+│ ┌─────────── hora (0 - 23)
+│ │ ┌───────── dia do mês (1 - 31)
+│ │ │ ┌─────── mês (1 - 12)
+│ │ │ │ ┌───── dia da semana (0 - 6) (Domingo=0 ou 7)
+│ │ │ │ │
+* * * * *
+
+# Verifique se foi adicionado:
+sudo crontab -l
