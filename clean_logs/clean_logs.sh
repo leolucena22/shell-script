@@ -1,5 +1,4 @@
 #!/bin/bash
-# Autor: Leonardo Lucena
 # Script Simples de Limpeza de Logs
 # Remove logs antigos para liberar espaço em disco
 
@@ -144,7 +143,6 @@ esac
 
 # Executa a limpeza
 echo -e "${PURPLE}🚀 Iniciando Script de Limpeza de Logs${NC}"
-echo -e "${PURPLE}👤 Autor: Leonardo Lucena${NC}"
 echo
 mostrar_espaco
 limpar_logs
